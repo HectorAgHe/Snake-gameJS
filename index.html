@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <style>
+        body{
+        
+            width: 95vw;
+            height: 95vh;
+            display: grid;
+            background: radial-gradient(79.43% 251.58% at 23.18% 73.07%, #0142a0 0, #0f133a
+            44.41%, #101034 56.43%, #141034 69.58%, #301436 100%, #411958 0);
+            place-items: center;
+            color: rgb(245, 10, 10);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #lienzo{
+            box-shadow: 10px 8px 20px 3px rgb(216, 8, 8);
+        }
+        h1{
+            text-align: center
+        }
+
+        .btn{
+            background-color: rgb(255, 25, 25);
+            border-radius: 50%;
+            width: 100%;
+            height: 18%;
+            border: 7px solid rgba(87, 11, 1, 0.664);
+            font-weight:bold;
+            justify-content: center;
+            margin-bottom: 25px;
+            color: rgb(1, 1, 31);
+            font-size: medium;
+        }
+        .btn:hover{
+    
+        filter: brightness(130%);
+        }
+        .container{
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+        }
+        .left, .rigth {
+            background-color:rgba(3, 43, 3, 0.822);
+            border-radius: 20%;
+            width: 100px;
+            height: 500px;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 10px;
+        }
+        .content-maquina{
+            background-color: rgba(255, 255, 255, 0.096);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding-right: 80px;
+            border: 1px solid rgba(0, 215, 253, 0.664);;
+
+        }
+    </style>
+    
+
+</head>
+<body>
+    <div class="content-maquina">
+    
+        <div class="container">
+            <div class="left">
+                <button class="btn">Up</button>
+                <button class="btn">Down</button>
+            </div>
+            <div class="center">
+                <h1>Snake Javascript</h1>
+            <canvas id = 'lienzo' width="500" height="340"></canvas>
+            </div>
+            <div class="rigth">
+                <button class="btn">Left</button>
+                <button class="btn">Rigth</button>
+    
+</div>
+</body>
+
+<script src="app.js"></script>
+
+</html>
